@@ -21,6 +21,11 @@ public class RutinaController {
         return rutinaService.crearRutina(rutina);
     }
 
+    @GetMapping("/all")
+    public List<Rutina> listarRutinas() {
+        return rutinaService.obtenerRutinas();
+    }
+
     @GetMapping
     public List<Rutina> obtenerPorUsuario(@RequestParam String usuarioId) {
         return rutinaService.obtenerRutinasPorUsuario(usuarioId);

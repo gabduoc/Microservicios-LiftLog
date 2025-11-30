@@ -24,6 +24,10 @@ public class RutinaService {
         return rutinaRepository.findByUsuarioId(usuarioId);
     }
 
+    public List<Rutina> obtenerRutinas() {
+        return rutinaRepository.findAll();
+    }
+
     public Optional<Rutina> obtenerRutina(Long id) {
         return rutinaRepository.findById(id);
     }
