@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>Ejercicios</module>
+        <module>ejercicio</module>
         <module>usuarios</module>
+        <module>rutina</module>
     </modules>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
