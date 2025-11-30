@@ -32,23 +32,6 @@ public class RutinaService {
         return rutinaRepository.findById(id);
     }
 
-    public Rutina actualizarRutina(Long id, Rutina datosActualizados) {
-        return rutinaRepository.findById(id)
-                .map(rutina -> {
-                    if (datosActualizados.getNombre() != null)
-                        rutina.setNombre(datosActualizados.getNombre());
-
-                    if (datosActualizados.getDescripcion() != null)
-                        rutina.setDescripcion(datosActualizados.getDescripcion());
-
-                    if (datosActualizados.getEjercicioIds() != null)
-                        rutina.setEjercicioIds(datosActualizados.getEjercicioIds());
-
-                    return rutinaRepository.save(rutina);
-                })
-                .orElseThrow(() -> new RuntimeException("Rutina no encontrada: " + id));
-    }
-
     public void eliminarRutina(Long id) {
         rutinaRepository.deleteById(id);
     }

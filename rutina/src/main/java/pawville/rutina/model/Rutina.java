@@ -25,6 +25,4 @@ public class Rutina {
 
     private String descripcion;
 
-    @ElementCollection
-    private List<String> ejercicioIds;
 }

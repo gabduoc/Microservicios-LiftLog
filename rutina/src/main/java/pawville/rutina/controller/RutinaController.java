@@ -37,11 +37,6 @@ public class RutinaController {
                 .orElseThrow(() -> new RuntimeException("Rutina no encontrada: " + id));
     }
 
-    @PutMapping("/{id}")
-    public Rutina actualizarRutina(@PathVariable Long id, @RequestBody Rutina rutina) {
-        return rutinaService.actualizarRutina(id, rutina);
-    }
-
     @DeleteMapping("/{id}")
     public void eliminarRutina(@PathVariable Long id) {
         rutinaService.eliminarRutina(id);
