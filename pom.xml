@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>Ejercicios</module>
+        <module>ejercicio</module>
         <module>usuarios</module>
     </modules>
     <properties>
