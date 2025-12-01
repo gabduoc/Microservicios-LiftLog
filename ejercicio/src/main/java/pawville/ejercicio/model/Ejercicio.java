@@ -23,6 +23,9 @@ public class Ejercicio {
     private String descripcion;
 
     @Column(nullable = false)
+    private String categoria;
+
+    @Column(nullable = false)
     private Integer duracionDefault;
 
     @Column(nullable = false)

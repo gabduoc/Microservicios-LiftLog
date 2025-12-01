@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Union {
+public class Union_v1 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
